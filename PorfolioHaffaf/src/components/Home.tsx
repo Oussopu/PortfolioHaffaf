@@ -1,10 +1,12 @@
 import '../assets/style/home.scss'
+import '../assets/style/about.scss'
 import me from '../assets/img/me.jpeg'
 import arrow from "../assets/img/arrowDown.svg";
 
 const Home = () => {
     return (
-        <div className="home-main">
+        <>
+        <section className="home-main">
             <div className="main-title">
                 <div className="job-title">
                     <h1 className="title">WEB DEVELOPER</h1>
@@ -51,7 +53,36 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section className="about-main">
+            <div className="title-about">
+                <h1>ABOUT ME</h1>
+            </div>
+            <div className="text-about">
+                <p className="about-text-one">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
+                    n reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <p className="about-text-two">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
+                    n reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <p className="about-text-three">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i
+                    n reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div>
+        </section>
+        </>
     );
 };
 
