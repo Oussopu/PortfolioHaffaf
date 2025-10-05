@@ -1,0 +1,65 @@
+.main-nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+  .website-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    cursor: pointer;
+    h3 {
+      margin: 0;
+      padding: 0;
+      line-height: 0.7;
+      font-family: 'Open Sans', sans-serif;
+      font-stretch: condensed;
+      font-weight: 600;
+      font-size: 24px;
+      color: #141414;
+    }
+  }
+  .website-nav {
+    width: 30%;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      p {
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+        font-stretch: condensed;
+        font-weight: 100;
+        font-size: 20px;
+        color: #141414;
+        cursor: pointer;
+      }
+    }
+
+  }
+  .website-contact {
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #141414;
+    cursor: pointer;
+    p {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-stretch: condensed;
+      font-weight: 700;
+      font-size: 20px;
+      color: #141414;
+    }
+    img {
+      padding-left: 5px;
+      height: 20px;
+      width: 20px;
+    }
+  }
+}
