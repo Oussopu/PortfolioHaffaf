@@ -1,0 +1,39 @@
+.about-main {
+  height: 100vh;
+  background-color: #141414;
+  margin-top: 15vh;
+  padding-top: 10vh;
+}
+.about-main .title-about h1 {
+  margin: 0;
+  padding: 0 0 0 200px;
+  font-family: "Open Sans", sans-serif;
+  font-stretch: condensed;
+  font-weight: 700;
+  font-size: 150px;
+  color: #f2f2f2;
+}
+.about-main .text-about .about-text-one, .about-main .text-about .about-text-two, .about-main .text-about .about-text-three {
+  width: 500px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-stretch: condensed;
+  font-weight: 100;
+  font-size: 20px;
+  color: #f2f2f2;
+}
+.about-main .text-about .about-text-one {
+  position: relative;
+  left: 400px;
+}
+.about-main .text-about .about-text-two {
+  position: relative;
+  left: 800px;
+}
+.about-main .text-about .about-text-three {
+  position: relative;
+  left: 900px;
+}
+
+/*# sourceMappingURL=about.css.map */
