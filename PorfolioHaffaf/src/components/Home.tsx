@@ -4,8 +4,6 @@ import '../assets/style/works.scss'
 import '../assets/style/service.scss'
 import me from '../assets/img/me.jpeg'
 import arrowDown from "../assets/img/arrowDown.svg";
-import arrowUp from "../assets/img/arrowUP.svg";
-
 const Home = () => {
     return (
         <>
@@ -166,7 +164,7 @@ const Home = () => {
                     </div>
                     <button type="submit">
                         SEND ME A MESSAGE
-                        <img src={arrowUp} alt="arrow icon" />
+                        <img src={arrowDown} alt="arrow icon" />
                     </button>
                 </form>
             </section>
