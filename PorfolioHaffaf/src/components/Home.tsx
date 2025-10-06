@@ -1,8 +1,10 @@
 import '../assets/style/home.scss'
 import '../assets/style/about.scss'
 import '../assets/style/works.scss'
+import '../assets/style/service.scss'
 import me from '../assets/img/me.jpeg'
 import arrowDown from "../assets/img/arrowDown.svg";
+import arrowUp from "../assets/img/arrowUP.svg";
 
 const Home = () => {
     return (
@@ -114,6 +116,59 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+            </section>
+            <section className="service-section">
+                <div className="title-service">
+                    <h1>A GREAT WORK</h1>
+                    <p>START WITH A GREAT</p>
+                    <h1>COLLABORATION</h1>
+                </div>
+                <form className="service-form">
+                    <div className="form-group">
+                        <label htmlFor="name"></label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="YOUR NAME *"
+                            required
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="phone"></label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="YOUR PHONE *"
+                            required
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="email"></label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="YOUR EMAIL *"
+                            required
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="message"></label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows={5}
+                            placeholder="HOW CAN I HELP YOU *"
+                            required
+                        />
+                    </div>
+                    <button type="submit">
+                        SEND ME A MESSAGE
+                        <img src={arrowUp} alt="arrow icon" />
+                    </button>
+                </form>
             </section>
         </>
     );

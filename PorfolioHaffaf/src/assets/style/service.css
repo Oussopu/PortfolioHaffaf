@@ -1,0 +1,100 @@
+.service-section {
+  height: 100vh;
+  padding-top: 10vh;
+}
+.service-section .title-service {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  align-items: center;
+  margin-bottom: 1vh;
+}
+.service-section .title-service h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-stretch: condensed;
+  font-weight: 700;
+  font-size: 150px;
+  color: #141414;
+}
+.service-section .title-service p {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-stretch: condensed;
+  font-weight: 100;
+  font-size: 20px;
+  color: #141414;
+}
+.service-section .service-form {
+  max-width: 600px;
+  width: 30vw;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.service-section .service-form .form-group {
+  margin-bottom: 1vh;
+}
+.service-section .service-form .form-group label {
+  display: none;
+}
+.service-section .service-form .form-group input,
+.service-section .service-form .form-group textarea {
+  width: 100%;
+  padding: 1vh 0;
+  font-family: "Open Sans", sans-serif;
+  font-stretch: condensed;
+  font-weight: 400;
+  font-size: 16px;
+  color: #141414;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #141414;
+}
+.service-section .service-form .form-group input::placeholder,
+.service-section .service-form .form-group textarea::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-stretch: condensed;
+  font-weight: 300;
+  font-size: 14px;
+  color: #141414;
+  letter-spacing: 1px;
+}
+.service-section .service-form .form-group input:focus,
+.service-section .service-form .form-group textarea:focus {
+  outline: none;
+  border-bottom-color: #141414;
+  border-bottom-width: 3px;
+}
+.service-section .service-form .form-group textarea {
+  resize: none;
+  min-height: 120px;
+}
+.service-section .service-form button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 0;
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-stretch: condensed;
+  font-weight: 700;
+  font-size: 20px;
+  color: #a3a3a3;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.service-section .service-form button img {
+  margin-left: 1vw;
+  height: 15px;
+  width: 15px;
+  filter: brightness(0) saturate(100%) invert(68%) sepia(0%) saturate(0%) hue-rotate(229deg) brightness(92%) contrast(89%);
+}
+
+/*# sourceMappingURL=service.css.map */
