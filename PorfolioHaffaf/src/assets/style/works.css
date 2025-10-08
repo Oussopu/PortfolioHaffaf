@@ -13,15 +13,6 @@
   align-items: center;
   padding-left: 20vw;
 }
-.works-main .title-works h1 {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", sans-serif;
-  font-stretch: condensed;
-  font-weight: 700;
-  font-size: 150px;
-  color: #141414;
-}
 .works-main .title-works img {
   height: 150px;
   width: 150px;
@@ -33,9 +24,9 @@
   top: 0;
   left: 0;
 }
-.works-main .works-slider .first-work {
+.works-main .works-slider .first-work, .works-main .works-slider .second-work, .works-main .works-slider .third-work {
+  padding: 0 1vw;
   position: absolute;
-  bottom: -171vh;
   height: 80vh;
   width: 100vw;
   background-color: #141414;
@@ -44,30 +35,21 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+}
+.works-main .works-slider .first-work {
+  bottom: -171vh;
+  background-color: #141414;
+  color: #f2f2f2;
 }
 .works-main .works-slider .second-work {
-  position: absolute;
   bottom: -174vh;
-  height: 80vh;
-  width: 100vw;
   background-color: #f2f2f2;
   color: #141414;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
 }
 .works-main .works-slider .third-work {
-  position: absolute;
   bottom: -177vh;
-  height: 80vh;
-  width: 100vw;
   background-color: #141414;
   color: #f2f2f2;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
 }
 
 /*# sourceMappingURL=works.css.map */

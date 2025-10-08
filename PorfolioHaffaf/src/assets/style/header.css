@@ -13,16 +13,7 @@
   flex-direction: column;
   gap: 0;
   cursor: pointer;
-}
-.main-nav .website-logo h3 {
-  margin: 0;
-  padding: 0;
   line-height: 0.7;
-  font-family: "Open Sans", sans-serif;
-  font-stretch: condensed;
-  font-weight: 600;
-  font-size: 24px;
-  color: #141414;
 }
 .main-nav .website-nav {
   width: 30%;
@@ -33,31 +24,14 @@
   justify-content: space-between;
 }
 .main-nav .website-nav ul p {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", sans-serif;
-  font-stretch: condensed;
-  font-weight: 100;
-  font-size: 20px;
-  color: #141414;
   cursor: pointer;
 }
 .main-nav .website-contact {
-  height: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   border-bottom: 1px solid #141414;
   cursor: pointer;
-}
-.main-nav .website-contact p {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", sans-serif;
-  font-stretch: condensed;
-  font-weight: 700;
-  font-size: 20px;
-  color: #141414;
 }
 .main-nav .website-contact img {
   padding-left: 5px;

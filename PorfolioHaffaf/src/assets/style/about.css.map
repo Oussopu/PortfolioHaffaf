@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["about.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EACA;;AAGE;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;AAIF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEF;EACE;EACA;;AAEF;EACE;EACA;;AAEF;EACE;EACA","file":"about.css"}
+{"version":3,"sourceRoot":"","sources":["about.scss","_variables.scss"],"names":[],"mappings":"AAEA;EACE;EACA,kBCJc;EDKd;EACA;;AAEE;EACE;EACA;;AAIF;EACE;;AAEF;EACE;EACA;;AAEF;EACE;EACA;;AAEF;EACE;EACA","file":"about.css"}
