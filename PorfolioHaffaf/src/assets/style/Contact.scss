@@ -1,17 +1,10 @@
+@import './variables';
+
 .contact-section {
   height: 100vh;
-  background-color: #141414;
+  background-color: $color-primary;
   .main-title-contact {
     padding: 20vh 0 0 10vw;
-    h2 {
-      margin: 0;
-      padding: 0;
-      font-family: 'Open Sans', sans-serif;
-      font-stretch: condensed;
-      font-weight: 300;
-      font-size: 50px;
-      color: #f2f2f2;
-    }
   }
   .contact-links{
     display: flex;
@@ -20,135 +13,34 @@
     justify-content: space-evenly;
     .main-resume {
       padding: 0 0 0 10vw;
-      .title-resume {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        h3 {
-          margin: 0;
-          padding: 0;
-          font-family: 'Open Sans', sans-serif;
-          font-stretch: condensed;
-          font-weight: 700;
-          font-size: 20px;
-          color: #a3a3a3;
-        }
-        img {
-          padding-left: 5px;
-          height: 20px;
-          width: 20px;
-        }
-      }
-      .resume-link {
-        p {
-          margin: 0;
-          padding: 0;
-          font-family: 'Open Sans', sans-serif;
-          font-stretch: condensed;
-          font-weight: 700;
-          font-size: 50px;
-          color: #f2f2f2;
-          border-bottom: 1px solid #f2f2f2;
-        }
-      }
+      cursor: pointer;
     }
     .main-contact {
-      .title-contact {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        h3 {
-          margin: 0;
-          padding: 0;
-          font-family: 'Open Sans', sans-serif;
-          font-stretch: condensed;
-          font-weight: 700;
-          font-size: 20px;
-          color: #a3a3a3;
-        }
-        img {
-          padding-left: 5px;
-          height: 20px;
-          width: 20px;
-        }
-      }
-      .contact-link {
-        p {
-          margin: 0;
-          padding: 0;
-          font-family: 'Open Sans', sans-serif;
-          font-stretch: condensed;
-          font-weight: 700;
-          font-size: 50px;
-          color: #f2f2f2;
-        }
-      }
-      .contact-link2 {
-        p {
-          margin: 0;
-          padding: 0;
-          font-family: 'Open Sans', sans-serif;
-          font-stretch: condensed;
-          font-weight: 700;
-          font-size: 50px;
-          color: #f2f2f2;
-          border-bottom: 1px solid #f2f2f2;
-        }
+      & > :nth-child(2) {
+        cursor: pointer;
       }
       .socials-link {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        .linkedin-link , .github-link , .whatsapp-link {
-          padding-top: 5vh;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          h3 {
-            margin: 0;
-            padding: 0;
-            font-family: 'Open Sans', sans-serif;
-            font-stretch: condensed;
-            font-weight: 700;
-            font-size: 20px;
-            color: #a3a3a3;
-          }
-          img {
-            padding-left: 5px;
-            height: 20px;
-            width: 20px;
-          }
-        }
+        padding-top: 5vh;
       }
     }
   }
   .main-footer {
     display: flex;
     justify-content: center;
-    h1 {
+
+    & > :first-child {
       position: absolute;
-      bottom: -3vh;
-      margin: 0;
-      padding: 0;
-      font-family: 'Open Sans', sans-serif;
-      font-stretch: condensed;
-      font-weight: 700;
-      font-size: 150px;
-      color: #f2f2f2;
+      bottom: 0;
     }
-    p {
+
+    & > :last-child {
       position: absolute;
       bottom: 1vh;
       right: 2vw;
-      margin: 0;
-      padding: 0;
-      font-family: 'Open Sans', sans-serif;
-      font-stretch: condensed;
-      font-weight: 100;
-      font-size: 12px;
-      color: #f2f2f2;
     }
-
   }
 }

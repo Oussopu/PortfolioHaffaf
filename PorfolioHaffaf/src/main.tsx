@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './assets/style/main.scss'
-import Header from "./components/Header.tsx";
-import Home from "./components/Home.tsx";
-import Contact from "./components/Contact.tsx";
+import Header from "./components/sections/Header.tsx";
+import Index from "./pages";
+import Contact from "./pages/Contact.tsx";
 
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
         <Router>
             <Header />
           <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<Index />} />
               <Route path="/contact" element={<Contact />} />
           </Routes>
         </Router>
