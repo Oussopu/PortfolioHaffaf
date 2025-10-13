@@ -7,13 +7,23 @@ import About from "../components/sections/About.tsx";
 import Works from "../components/sections/Works.tsx";
 import Service from "../components/sections/Service.tsx";
 
-const Index = () => {
+type Tone = 'light' | 'dark';
+
+const Index = ({ onEnterTone }: { onEnterTone: (t: Tone) => void }) => {
     return (
         <>
-            <Home/>
-            <About/>
-            <Works/>
-            <Service/>
+            <section id="home">
+                <Home onEnterTone={onEnterTone} />
+            </section>
+            <section id="about">
+                <About onEnterTone={onEnterTone} />
+            </section>
+            <section id="works">
+                <Works onEnterTone={onEnterTone} />
+            </section>
+            <section id="service">
+                <Service onEnterTone={onEnterTone} />
+            </section>
         </>
     );
 };

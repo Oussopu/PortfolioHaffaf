@@ -1,4 +1,5 @@
-import TitleArrow from "./TitleArrow.tsx";
+import Text from "./Text.tsx";
+import arrow from "../assets/img/arrowDown.svg";
 
 const ServiceForm =() =>(
     <form className="service-form">
@@ -43,7 +44,14 @@ const ServiceForm =() =>(
             />
         </div>
         <button type="submit">
-            <TitleArrow title="SEND ME A MESSAGE" />
+            <div className="text-arrow">
+                <Text
+                    name="SEND ME A MESSAGE"
+                    fontSize="20px"
+                    color="#a3a3a3"
+                />
+                <img src={arrow} alt="arrow icon" />
+            </div>
         </button>
     </form>
 )

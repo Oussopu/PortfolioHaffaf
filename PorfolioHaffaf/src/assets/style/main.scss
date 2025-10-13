@@ -1,24 +1,47 @@
 @import './variables';
 @import './reset';
 
-.title-with-arrow {
-  display: flex;
-  flex-direction: row;
+
+.text-arrow {
+  display: inline-flex;
   align-items: center;
+  flex-direction: row;
+  gap: 10px;
   cursor: pointer;
-  h3 {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-stretch: condensed;
-    font-weight: 700;
-    font-size: $font-size-md;
-    color: $color-tertiary;
-  }
   img {
     padding-left: 5px;
     height: 20px;
     width: 20px;
+  }
+  p {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+
+    &.border-animate {
+      border-bottom-color: transparent !important;
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 130%;
+        height: 1px;
+        background-color: currentColor;
+        transform-origin: left;
+        transform: scaleX(0);
+        animation: borderSlide 0.6s ease-out forwards;
+      }
+    }
+  }
+}
+
+@keyframes borderSlide {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
   }
 }
 
@@ -29,5 +52,6 @@
     font-family: 'Open Sans', sans-serif;
     font-stretch: condensed;
     font-weight: 700;
+    color: inherit;
   }
 }

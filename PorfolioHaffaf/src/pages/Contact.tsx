@@ -1,11 +1,16 @@
-import '../assets/style/Contact.scss'
+import '../assets/style/contact.scss'
 import MainTitleContact from "../components/MainTitleContact.tsx";
 import MainFooterContact from "../components/MainFooterContact.tsx";
 import ContactLinks from "../components/ContactLinks.tsx";
+import { useSectionTone, type Tone} from "../hooks/useSectionTone.ts";
 
-const Contact = () => {
+
+
+
+const Contact = ({ onEnterTone }: { onEnterTone: (t: Tone) => void }) => {
+    const ref = useSectionTone('dark', onEnterTone);
     return (
-        <section className="contact-section">
+        <section ref={ref} className="contact-section">
             <MainTitleContact />
             <ContactLinks />
             <MainFooterContact />
@@ -14,3 +19,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
+

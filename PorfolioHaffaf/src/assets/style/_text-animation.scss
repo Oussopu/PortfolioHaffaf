@@ -1,0 +1,40 @@
+@keyframes charRotateUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-150%);
+    opacity: 0;
+  }
+  51% {
+    transform: translateY(150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.char-animate {
+  display: inline-block;
+  animation: charRotateUp 0.4s ease-in-out forwards;
+}
+
+
+@keyframes charFadeInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.char-fade-up {
+  display: inline-block;
+  animation: charFadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
