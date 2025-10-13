@@ -1,10 +1,12 @@
-import TitleWorks from "../titkleWorks.tsx";
+import TitleWorks from "../TitleWorks.tsx";
 import WorksSlider from "../WorksSlider.tsx";
+import { useSectionTone, type Tone } from "../../hooks/useSectionTone";
 
+const Works = ({ onEnterTone }: { onEnterTone: (t: Tone) => void }) => {
+    const ref = useSectionTone('light', onEnterTone);
 
-const Works = () => {
     return (
-        <section className="works-main">
+        <section ref={ref} className="works-main">
             <TitleWorks />
             <WorksSlider />
         </section>

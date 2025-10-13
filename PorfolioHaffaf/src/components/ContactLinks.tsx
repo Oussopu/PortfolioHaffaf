@@ -1,10 +1,17 @@
-import TitleArrow from "./TitleArrow.tsx";
 import Text from "./Text.tsx";
+import arrow from "../assets/img/arrowDown.svg";
 
 const ContactLinks =() => (
     <div className="contact-links">
         <div className="main-resume">
-            <TitleArrow title="MY RESUME"/>
+            <div className="text-arrow">
+                <Text
+                    name="MY RESUME"
+                    fontSize="20px"
+                    color="#a3a3a3"
+                />
+                <img src={arrow} alt="arrow icon" />
+            </div>
             <Text
                 name="O.HAFFAF RESUME"
                 color="#f2f2f2"
@@ -14,7 +21,14 @@ const ContactLinks =() => (
             />
         </div>
         <div className="main-contact">
-            <TitleArrow title="CONTACT ME"/>
+            <div className="text-arrow">
+                <Text
+                    name="CONTACT ME"
+                    fontSize="20px"
+                    color="#a3a3a3"
+                />
+                <img src={arrow} alt="arrow icon" />
+            </div>
             <Text
                 name="O.HAFFAF.DEV@GMAIL.COM"
                 color="#f2f2f2"
@@ -28,9 +42,30 @@ const ContactLinks =() => (
                 fontSize="50px"
             />
             <div className="socials-link">
-                <TitleArrow title="LINKEDIN"/>
-                <TitleArrow title="GITHUB"/>
-                <TitleArrow title="WHATSAPP"/>
+                <div className="text-arrow">
+                    <Text
+                        name="LINKEDIN"
+                        fontSize="20px"
+                        color="#a3a3a3"
+                    />
+                    <img src={arrow} alt="arrow icon" />
+                </div>
+                <div className="text-arrow">
+                    <Text
+                        name="GITHUB"
+                        fontSize="20px"
+                        color="#a3a3a3"
+                    />
+                    <img src={arrow} alt="arrow icon" />
+                </div>
+                <div className="text-arrow">
+                    <Text
+                        name="WHATSAPP"
+                        fontSize="20px"
+                        color="#a3a3a3"
+                    />
+                    <img src={arrow} alt="arrow icon" />
+                </div>
             </div>
         </div>
     </div>
