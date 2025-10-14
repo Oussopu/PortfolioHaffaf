@@ -4,6 +4,7 @@
   align-items: center;
   line-height: 0.8;
   padding-top: 25vh;
+
   .main-title {
     padding-left: 20vw;
     .job-title {
@@ -23,6 +24,7 @@
       }
     }
   }
+
   .main-picture {
     display: flex;
     flex-direction: row;
@@ -50,6 +52,7 @@
       line-height: 1.5;
     }
   }
+
   .main-description {
     width: 100vw;
     display: flex;
@@ -67,5 +70,44 @@
       padding-right: 200px;
       cursor: pointer;
     }
+    .contact-link, .work-link {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .text-arrow {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    p {
+      margin: 0;
+      position: relative;
+      display: inline-block;
+    }
+
+    p.border-animate {
+      border-bottom-color: transparent !important;
+    }
+
+    p.border-animate::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 1px;
+      background-color: currentColor;
+      transform-origin: left;
+      transform: scaleX(0);
+      animation: borderSlide 0.6s ease-out forwards;
+    }
+  }
+
+  @keyframes borderSlide {
+    from { transform: scaleX(0); }
+    to   { transform: scaleX(1); }
   }
 }

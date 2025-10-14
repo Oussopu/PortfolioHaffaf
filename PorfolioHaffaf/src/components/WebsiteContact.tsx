@@ -1,12 +1,12 @@
 import { useNavigate } from 'react-router-dom';
 import arrow from "../assets/img/arrowDown.svg";
 import Text from "./Text.tsx";
-import { useTextArrowAnimation } from "../hooks/useTextArrowAnimation";
+import { useTextArrowAnimationHeader } from "../hooks/useTextArrowAnimationHeader.ts";
 
 const WebsiteContact = () => {
     const navigate = useNavigate();
 
-    useTextArrowAnimation({
+    useTextArrowAnimationHeader({
         selector: '.website-contact .text-arrow',
         arrowBaseRotation: 0,
         arrowHoverRotation: -45
