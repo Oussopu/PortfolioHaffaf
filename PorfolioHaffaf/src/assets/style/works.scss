@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   .title-works {
     display: flex;
     flex-direction: row;
@@ -16,7 +17,8 @@
     img {
       height: 150px;
       width: 150px;
-      filter: brightness(0) saturate(100%) invert(8%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(92%) contrast(92%);
+      filter: brightness(0) saturate(100%) invert(8%) sepia(0%) saturate(0%)
+      hue-rotate(0deg) brightness(92%) contrast(92%);
     }
   }
 
@@ -25,35 +27,92 @@
     width: 100%;
     top: 0;
     left: 0;
-    .first-work, .second-work, .third-work {
+    overscroll-behavior: contain;
+    .first-work,
+    .second-work,
+    .third-work {
       padding: 0 1vw;
       position: absolute;
       height: 80vh;
       width: 100vw;
-      background-color: $color-primary;
-      color: $color-secondary;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: flex-start;
-      justify-content: space-between;
+      transition: bottom 0.8s ease;
+      will-change: bottom;
+      .first-work-title, .second-work-title, .third-work-title {
+        height: 3vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .first-work-description, .second-work-description, .third-work-description {
+        height: 77vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        img {
+          filter: grayscale(100%);
+          padding: 0 3vw;
+          width: 70vh;
+          cursor: pointer;
+          &:hover {
+            filter: none;
+          }
+        }
+        p {
+          width: 30vw;
+        }
+      }
+
+      .dev-badge {
+        position: relative;
+        background-color: rgba(20, 20, 20, 0.9);
+        color: $color-secondary;
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      .second-work-description {
+        flex-direction: row-reverse;
+      }
+      .first-work-description {
+        img {
+          cursor: not-allowed;
+          &:hover {
+            filter: grayscale(50%);
+          }
+        }
+      }
     }
 
-    .first-work {
-      bottom: -171vh;
-      background-color: $color-primary;
-      color: $color-secondary;
-    }
+    .first-work  { bottom: -171vh; background-color: $color-primary;   color: $color-secondary; }
+    .second-work { bottom: -174vh; background-color: $color-secondary; color: $color-primary;   }
+    .third-work  { bottom: -177vh; background-color: $color-primary;   color: $color-secondary; }
 
-    .second-work {
-      bottom: -174vh;
-      background-color: $color-secondary;
-      color: $color-primary;
+    &.open-0 {
+      .first-work  { bottom: -171vh; }
+      .second-work { bottom: -174vh; }
+      .third-work  { bottom: -177vh; }
     }
-
-    .third-work {
-      bottom: -177vh;
-      background-color: $color-primary;
-      color: $color-secondary;
+    &.open-1 {
+      .first-work  { bottom: -94vh;  }
+      .second-work { bottom: -174vh; }
+      .third-work  { bottom: -177vh; }
+    }
+    &.open-2 {
+      .first-work  { bottom: -94vh;  }
+      .second-work { bottom: -97vh;  }
+      .third-work  { bottom: -177vh; }
+    }
+    &.open-3 {
+      .first-work  { bottom: -94vh;  }
+      .second-work { bottom: -97vh;  }
+      .third-work  { bottom: -100vh; }
     }
   }
 }

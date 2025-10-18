@@ -2,9 +2,11 @@ import { useNavigate } from 'react-router-dom';
 import arrow from "../assets/img/arrowDown.svg";
 import Text from "./Text.tsx";
 import { useTextArrowAnimationHeader } from "../hooks/useTextArrowAnimationHeader.ts";
+import { useResetWorksSlider } from "../hooks/useResetWorksSlider";
 
 const WebsiteContact = () => {
     const navigate = useNavigate();
+    const { resetWorksSlider } = useResetWorksSlider();
 
     useTextArrowAnimationHeader({
         selector: '.website-contact .text-arrow',
@@ -13,6 +15,7 @@ const WebsiteContact = () => {
     });
 
     const handleClick = () => {
+        resetWorksSlider();
         navigate('/contact');
     };
 

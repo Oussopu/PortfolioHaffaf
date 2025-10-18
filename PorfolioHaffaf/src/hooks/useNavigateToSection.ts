@@ -5,18 +5,10 @@ export const useNavigateToSection = () => {
     const location = useLocation();
 
     const navigateToSection = (sectionId: string, offset: number = 0) => {
-        if (location.pathname === '/') {
-            const section = document.getElementById(sectionId);
-            if (section) {
-                const offsetTop = section.offsetTop - offset;
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
-            }
-        } else {
-            navigate('/');
-            setTimeout(() => {
+        window.dispatchEvent(new Event('works-slider-reset'));
+
+        setTimeout(() => {
+            if (location.pathname === '/') {
                 const section = document.getElementById(sectionId);
                 if (section) {
                     const offsetTop = section.offsetTop - offset;
@@ -25,8 +17,20 @@ export const useNavigateToSection = () => {
                         behavior: 'smooth'
                     });
                 }
-            }, 100);
-        }
+            } else {
+                navigate('/');
+                setTimeout(() => {
+                    const section = document.getElementById(sectionId);
+                    if (section) {
+                        const offsetTop = section.offsetTop - offset;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                }, 100);
+            }
+        }, 50);
     };
 
     return { navigateToSection };

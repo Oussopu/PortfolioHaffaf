@@ -37,7 +37,6 @@
 }
 
 .main-nav {
-  z-index: 1000;
   position: fixed;
   height: 10vh;
   width: 100%;
@@ -47,6 +46,12 @@
   padding: 0 2vw;
   background: transparent;
   color: #141414;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  isolation: isolate;
+  pointer-events: auto;
 }
 .main-nav * {
   color: inherit;

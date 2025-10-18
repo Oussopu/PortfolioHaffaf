@@ -6,7 +6,7 @@ const Works = ({ onEnterTone }: { onEnterTone: (t: Tone) => void }) => {
     const ref = useSectionTone('light', onEnterTone);
 
     return (
-        <section ref={ref} className="works-main">
+        <section ref={ref} id="works" data-section="works" className="works-main">
             <TitleWorks />
             <WorksSlider />
         </section>

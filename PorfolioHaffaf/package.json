@@ -11,11 +11,15 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "embla-carousel": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
+    "embla-carousel-wheel-gestures": "^8.1.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-intersection-observer": "^9.16.0",
     "react-router-dom": "^7.9.4",
-    "splitting": "^1.1.0"
+    "splitting": "^1.1.0",
+    "wheel-gestures": "^2.2.48"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
