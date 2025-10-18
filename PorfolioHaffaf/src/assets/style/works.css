@@ -23,18 +23,102 @@
   width: 100%;
   top: 0;
   left: 0;
+  overscroll-behavior: contain;
 }
-.works-main .works-slider .first-work, .works-main .works-slider .second-work, .works-main .works-slider .third-work {
+.works-main .works-slider .first-work,
+.works-main .works-slider .second-work,
+.works-main .works-slider .third-work {
   padding: 0 1vw;
   position: absolute;
   height: 80vh;
   width: 100vw;
-  background-color: #141414;
-  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: bottom 0.8s ease;
+  will-change: bottom;
+}
+.works-main .works-slider .first-work .first-work-title, .works-main .works-slider .first-work .second-work-title, .works-main .works-slider .first-work .third-work-title,
+.works-main .works-slider .second-work .first-work-title,
+.works-main .works-slider .second-work .second-work-title,
+.works-main .works-slider .second-work .third-work-title,
+.works-main .works-slider .third-work .first-work-title,
+.works-main .works-slider .third-work .second-work-title,
+.works-main .works-slider .third-work .third-work-title {
+  height: 3vh;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
+  width: 100%;
+}
+.works-main .works-slider .first-work .first-work-description, .works-main .works-slider .first-work .second-work-description, .works-main .works-slider .first-work .third-work-description,
+.works-main .works-slider .second-work .first-work-description,
+.works-main .works-slider .second-work .second-work-description,
+.works-main .works-slider .second-work .third-work-description,
+.works-main .works-slider .third-work .first-work-description,
+.works-main .works-slider .third-work .second-work-description,
+.works-main .works-slider .third-work .third-work-description {
+  height: 77vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.works-main .works-slider .first-work .first-work-description img, .works-main .works-slider .first-work .second-work-description img, .works-main .works-slider .first-work .third-work-description img,
+.works-main .works-slider .second-work .first-work-description img,
+.works-main .works-slider .second-work .second-work-description img,
+.works-main .works-slider .second-work .third-work-description img,
+.works-main .works-slider .third-work .first-work-description img,
+.works-main .works-slider .third-work .second-work-description img,
+.works-main .works-slider .third-work .third-work-description img {
+  filter: grayscale(100%);
+  padding: 0 3vw;
+  width: 70vh;
+  cursor: pointer;
+}
+.works-main .works-slider .first-work .first-work-description img:hover, .works-main .works-slider .first-work .second-work-description img:hover, .works-main .works-slider .first-work .third-work-description img:hover,
+.works-main .works-slider .second-work .first-work-description img:hover,
+.works-main .works-slider .second-work .second-work-description img:hover,
+.works-main .works-slider .second-work .third-work-description img:hover,
+.works-main .works-slider .third-work .first-work-description img:hover,
+.works-main .works-slider .third-work .second-work-description img:hover,
+.works-main .works-slider .third-work .third-work-description img:hover {
+  filter: none;
+}
+.works-main .works-slider .first-work .first-work-description p, .works-main .works-slider .first-work .second-work-description p, .works-main .works-slider .first-work .third-work-description p,
+.works-main .works-slider .second-work .first-work-description p,
+.works-main .works-slider .second-work .second-work-description p,
+.works-main .works-slider .second-work .third-work-description p,
+.works-main .works-slider .third-work .first-work-description p,
+.works-main .works-slider .third-work .second-work-description p,
+.works-main .works-slider .third-work .third-work-description p {
+  width: 30vw;
+}
+.works-main .works-slider .first-work .dev-badge,
+.works-main .works-slider .second-work .dev-badge,
+.works-main .works-slider .third-work .dev-badge {
+  position: relative;
+  background-color: rgba(20, 20, 20, 0.9);
+  color: #f2f2f2;
+  font-size: 20px;
+  font-weight: 700;
+}
+.works-main .works-slider .first-work .second-work-description,
+.works-main .works-slider .second-work .second-work-description,
+.works-main .works-slider .third-work .second-work-description {
+  flex-direction: row-reverse;
+}
+.works-main .works-slider .first-work .first-work-description img,
+.works-main .works-slider .second-work .first-work-description img,
+.works-main .works-slider .third-work .first-work-description img {
+  cursor: not-allowed;
+}
+.works-main .works-slider .first-work .first-work-description img:hover,
+.works-main .works-slider .second-work .first-work-description img:hover,
+.works-main .works-slider .third-work .first-work-description img:hover {
+  filter: grayscale(50%);
 }
 .works-main .works-slider .first-work {
   bottom: -171vh;
@@ -50,6 +134,42 @@
   bottom: -177vh;
   background-color: #141414;
   color: #f2f2f2;
+}
+.works-main .works-slider.open-0 .first-work {
+  bottom: -171vh;
+}
+.works-main .works-slider.open-0 .second-work {
+  bottom: -174vh;
+}
+.works-main .works-slider.open-0 .third-work {
+  bottom: -177vh;
+}
+.works-main .works-slider.open-1 .first-work {
+  bottom: -94vh;
+}
+.works-main .works-slider.open-1 .second-work {
+  bottom: -174vh;
+}
+.works-main .works-slider.open-1 .third-work {
+  bottom: -177vh;
+}
+.works-main .works-slider.open-2 .first-work {
+  bottom: -94vh;
+}
+.works-main .works-slider.open-2 .second-work {
+  bottom: -97vh;
+}
+.works-main .works-slider.open-2 .third-work {
+  bottom: -177vh;
+}
+.works-main .works-slider.open-3 .first-work {
+  bottom: -94vh;
+}
+.works-main .works-slider.open-3 .second-work {
+  bottom: -97vh;
+}
+.works-main .works-slider.open-3 .third-work {
+  bottom: -100vh;
 }
 
 /*# sourceMappingURL=works.css.map */
