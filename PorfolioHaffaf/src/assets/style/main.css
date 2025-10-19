@@ -5,6 +5,8 @@
 }
 
 body {
+  width: 100ww;
+  overflow-x: hidden;
   line-height: 1.5;
   font-family: "Open Sans Condensed", sans-serif;
   background-color: #f2f2f2;

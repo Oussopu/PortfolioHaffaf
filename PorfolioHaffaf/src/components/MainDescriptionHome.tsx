@@ -1,4 +1,5 @@
 import Text from "./Text.tsx";
+import TypewriterEffect from "./animations/TypewriterEffect";
 import arrowDown from "../assets/img/arrowDown.svg";
 import { useTextArrowAnimationWebsite } from "../hooks/useTextArrowAnimationWebsite.ts";
 
@@ -18,10 +19,14 @@ const MainDescriptionHome = () => {
         <div className="main-description">
             <a className="contact-link" href={mailto}>
                 <div className="text-arrow">
-                    <Text name="CONTACT ME" fontSize="20px" color="#a3a3a3" />
+                    <TypewriterEffect triggerOnLoad={true} delay={0.7}>
+                        <Text name="CONTACT ME" fontSize="20px" color="#a3a3a3" />
+                    </TypewriterEffect>
                     <img src={arrowDown} alt="arrow icon" />
                 </div>
-                <Text name="O.HAFFAF.DEV@GMAIL.COM" fontSize="20px" hasBorder={true} />
+                <TypewriterEffect triggerOnLoad={true} delay={0.7}>
+                    <Text name="O.HAFFAF.DEV@GMAIL.COM" fontSize="20px" hasBorder={true} />
+                </TypewriterEffect>
             </a>
 
             <a
@@ -32,10 +37,14 @@ const MainDescriptionHome = () => {
                 aria-label="Open Lizzy's World on Figma"
             >
                 <div className="text-arrow">
-                    <Text name="LAST WORK" fontSize="20px" color="#a3a3a3" />
+                    <TypewriterEffect triggerOnLoad={true} delay={0.9}>
+                        <Text name="LAST WORK" fontSize="20px" color="#a3a3a3" />
+                    </TypewriterEffect>
                     <img src={arrowDown} alt="arrow icon" />
                 </div>
-                <Text name="LIZZY'SWORLD" fontSize="20px" />
+                <TypewriterEffect triggerOnLoad={true} delay={0.9}>
+                    <Text name="LIZZY'SWORLD" fontSize="20px" />
+                </TypewriterEffect>
             </a>
         </div>
     );

@@ -39,7 +39,7 @@
 .main-nav {
   position: fixed;
   height: 10vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;

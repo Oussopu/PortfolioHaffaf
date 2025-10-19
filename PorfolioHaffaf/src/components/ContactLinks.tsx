@@ -2,6 +2,8 @@ import Text from "./Text.tsx";
 import arrow from "../assets/img/arrowDown.svg";
 import { useTextArrowAnimationWebsite } from "../hooks/useTextArrowAnimationWebsite.ts";
 import resumePdf from "../assets/resume/o.haffaf.dev.resume.pdf";
+import TypewriterEffect from "./animations/TypewriterEffect.tsx";
+import FadeEffect from "./animations/FadeEffect.tsx";
 
 const ContactLinks = () => {
     useTextArrowAnimationWebsite({ selector: ".contact-links > *:nth-child(1)" });
@@ -25,34 +27,44 @@ const ContactLinks = () => {
                 aria-label="Télécharger le CV de Oussama Haffaf"
             >
                 <div className="text-arrow">
-                    <Text name="MY RESUME" fontSize="20px" color="#a3a3a3" />
+                    <TypewriterEffect triggerOnLoad={true} delay={0}>
+                        <Text name="MY RESUME" fontSize="20px" color="#a3a3a3" />
+                    </TypewriterEffect>
                     <img src={arrow} alt="arrow icon" />
                 </div>
-                <Text
-                    name="O.HAFFAF RESUME"
-                    color="#f2f2f2"
-                    fontSize="50px"
-                    hasBorder={true}
-                    borderColor="#f2f2f2"
-                />
-            </a>
-
-            <div className="main-contact">
-                <a className="main-contact-head" href={mailto}>
-                    <div className="text-arrow">
-                        <Text name="CONTACT ME" fontSize="20px" color="#a3a3a3" />
-                        <img src={arrow} alt="arrow icon" />
-                    </div>
+                <TypewriterEffect triggerOnLoad={true} delay={0}>
                     <Text
-                        name="O.HAFFAF.DEV@GMAIL.COM"
+                        name="O.HAFFAF RESUME"
                         color="#f2f2f2"
                         fontSize="50px"
                         hasBorder={true}
                         borderColor="#f2f2f2"
                     />
+                </TypewriterEffect>
+            </a>
+
+            <div className="main-contact">
+                <a className="main-contact-head" href={mailto}>
+                    <div className="text-arrow">
+                        <TypewriterEffect triggerOnLoad={true} delay={0}>
+                            <Text name="CONTACT ME" fontSize="20px" color="#a3a3a3" />
+                        </TypewriterEffect>
+                        <img src={arrow} alt="arrow icon" />
+                    </div>
+                    <TypewriterEffect triggerOnLoad={true} delay={0}>
+                        <Text
+                            name="O.HAFFAF.DEV@GMAIL.COM"
+                            color="#f2f2f2"
+                            fontSize="50px"
+                            hasBorder={true}
+                            borderColor="#f2f2f2"
+                        />
+                    </TypewriterEffect>
                 </a>
 
-                <Text name="+33 7 59 55 52 19" color="#f2f2f2" fontSize="50px" />
+                <TypewriterEffect triggerOnLoad={true} delay={0}>
+                    <Text name="+33 7 59 55 52 19" color="#f2f2f2" fontSize="50px" />
+                </TypewriterEffect>
 
                 <div className="socials-link">
                     <a
@@ -63,7 +75,9 @@ const ContactLinks = () => {
                         aria-label="Ouvrir le profil LinkedIn d'Oussama Haffaf"
                     >
                         <div className="text-arrow">
-                            <Text name="LINKEDIN" fontSize="20px" color="#a3a3a3" />
+                            <FadeEffect triggerOnLoad={true} delay={0}>
+                                <Text name="LINKEDIN" fontSize="20px" color="#a3a3a3" />
+                            </FadeEffect>
                             <img src={arrow} alt="arrow icon" />
                         </div>
                     </a>
@@ -76,7 +90,9 @@ const ContactLinks = () => {
                         aria-label="Ouvrir le profil GitHub d'Oussama Haffaf"
                     >
                         <div className="text-arrow">
-                            <Text name="GITHUB" fontSize="20px" color="#a3a3a3" />
+                            <FadeEffect triggerOnLoad={true} delay={0}>
+                                <Text name="GITHUB" fontSize="20px" color="#a3a3a3" />
+                            </FadeEffect>
                             <img src={arrow} alt="arrow icon" />
                         </div>
                     </a>
@@ -89,7 +105,9 @@ const ContactLinks = () => {
                         aria-label="Envoyer un message WhatsApp au +1 514 269 7226"
                     >
                         <div className="text-arrow">
-                            <Text name="WHATSAPP" fontSize="20px" color="#a3a3a3" />
+                            <FadeEffect triggerOnLoad={true} delay={0}>
+                                <Text name="WHATSAPP" fontSize="20px" color="#a3a3a3" />
+                            </FadeEffect>
                             <img src={arrow} alt="arrow icon" />
                         </div>
                     </a>

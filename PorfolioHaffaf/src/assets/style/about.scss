@@ -12,8 +12,8 @@
     }
   }
   .text-about {
-    & > :nth-child(1),:nth-child(2), :nth-child(3) {
-      width: 500px;
+    .text {
+      width: 25vw;
     }
     & > :nth-child(1) {
       position: relative;

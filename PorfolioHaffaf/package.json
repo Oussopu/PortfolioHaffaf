@@ -14,10 +14,12 @@
     "embla-carousel": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
     "embla-carousel-wheel-gestures": "^8.1.0",
+    "gsap": "^3.13.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-intersection-observer": "^9.16.0",
     "react-router-dom": "^7.9.4",
+    "split-type": "^0.3.4",
     "splitting": "^1.1.0",
     "wheel-gestures": "^2.2.48"
   },
