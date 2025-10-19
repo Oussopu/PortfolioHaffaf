@@ -8,8 +8,8 @@
   margin: 0;
   padding: 0 0 0 200px;
 }
-.about-main .text-about > :nth-child(1), .about-main .text-about :nth-child(2), .about-main .text-about :nth-child(3) {
-  width: 500px;
+.about-main .text-about .text {
+  width: 25vw;
 }
 .about-main .text-about > :nth-child(1) {
   position: relative;

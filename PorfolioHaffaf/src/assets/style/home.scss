@@ -26,8 +26,10 @@
   }
 
   .main-picture {
+    z-index: -1;
     display: flex;
     flex-direction: row;
+    animation: slideUpFade 0.8s ease-out 0.3s backwards;
     .grey-background {
       position: relative;
       left: 150px;
@@ -110,4 +112,15 @@
     from { transform: scaleX(0); }
     to   { transform: scaleX(1); }
   }
+
+  @keyframes slideUpFade {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+ }
 }

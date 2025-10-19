@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import Text from "./Text.tsx";
 import arrow from "../assets/img/arrowDown.svg";
 import { useTextArrowAnimationWebsite } from "../hooks/useTextArrowAnimationWebsite.ts";
+import TypewriterEffect from "./animations/TypewriterEffect.tsx";
 
 const ServiceForm = () => {
     const formRef = useRef<HTMLFormElement | null>(null);
@@ -77,11 +78,13 @@ const ServiceForm = () => {
                 className={`submit-btn ${sending ? "is-sending" : ""} ${status ?? ""}`}
             >
                 <div className="text-arrow">
-                    <Text
-                        name={buttonLabel}
-                        fontSize="20px"
-                        color="#a3a3a3"
-                    />
+                    <TypewriterEffect triggerOnLoad={true} delay={0.5}>
+                        <Text
+                            name={buttonLabel}
+                            fontSize="20px"
+                            color="#a3a3a3"
+                        />
+                    </TypewriterEffect>
                     {!sending && <img src={arrow} alt="arrow icon" />}
                 </div>
             </button>
