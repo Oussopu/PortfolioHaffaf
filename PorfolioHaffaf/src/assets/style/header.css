@@ -59,6 +59,9 @@
   stroke: currentColor;
 }
 .main-nav .website-logo {
+  background: none;
+  border: none;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -66,9 +69,14 @@
   line-height: 0.7;
 }
 .main-nav .website-nav ul li {
+  list-style: none;
   position: relative;
   cursor: pointer;
   display: flex;
+}
+.main-nav .website-nav ul li .nav-button {
+  background: none;
+  border: none;
 }
 .main-nav .website-nav ul li p {
   display: inline-block;

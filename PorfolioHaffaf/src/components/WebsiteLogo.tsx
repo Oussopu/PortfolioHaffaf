@@ -1,25 +1,15 @@
-import Text from "./Text.tsx";
-import { useNavigateToSection } from "../hooks/useNavigateToSection";
+import { useNavigateToSection } from '../hooks/useNavigateToSection';
+import Text from './Text.tsx';
 
 const WebsiteLogo = () => {
-    const { navigateToSection } = useNavigateToSection();
+  const { navigateToSection } = useNavigateToSection();
 
-    return (
-        <div
-            className="website-logo"
-            onClick={() => navigateToSection('home')}
-            style={{ cursor: 'pointer' }}
-        >
-            <Text
-                name="HAFFAF"
-                fontSize="24px"
-            />
-            <Text
-                name="OUSSAMA"
-                fontSize="24px"
-            />
-        </div>
-    );
+  return (
+    <button type="button" className="website-logo" onClick={() => navigateToSection('home')}>
+      <Text name="HAFFAF" fontSize="24px" />
+      <Text name="OUSSAMA" fontSize="24px" />
+    </button>
+  );
 };
 
 export default WebsiteLogo;
