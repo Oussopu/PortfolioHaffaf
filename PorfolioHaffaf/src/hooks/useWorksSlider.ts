@@ -1,11 +1,12 @@
 import useEmblaCarousel from 'embla-carousel-react';
-import { useCallback, useEffect, useRef } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 const STEP_THRESHOLD = 160;
 const QUIET_MS = 100;
 const ENTER_MARGIN = 8;
 const OPEN_DIRECTION: 'up' | 'down' = 'down';
 const STEP_COOLDOWN_MS = 520;
+const MOBILE_BREAKPOINT = 1024;
 
 const bodyLock = {
   locked: false,
@@ -41,6 +42,8 @@ const preventDefault = (e: Event): void => {
 };
 
 export function useWorksSlider() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= MOBILE_BREAKPOINT);
+
   const sliderRef = useRef<HTMLDivElement | null>(null);
   const sectionRef = useRef<HTMLElement | null>(null);
   const [emblaViewportRef] = useEmblaCarousel({
@@ -226,7 +229,33 @@ export function useWorksSlider() {
     }
   }, [applyStageClass, onKeyDuringCapture]);
 
+  // Détection du resize pour mobile
   useEffect(() => {
+    const handleResize = () => {
+      const newIsMobile = window.innerWidth <= MOBILE_BREAKPOINT;
+      if (newIsMobile !== isMobile) {
+        setIsMobile(newIsMobile);
+        if (newIsMobile) {
+          forceReset();
+        }
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [isMobile, forceReset]);
+
+  useEffect(() => {
+    // Si mobile, on n'active pas les listeners
+    if (isMobile) {
+      // Forcer l'affichage mobile (tous les projets visibles)
+      const el = sliderRef.current;
+      if (el) {
+        el.classList.add('mobile-view');
+      }
+      return;
+    }
+
     const section = sectionRef.current;
     let disconnect = () => {};
     if (section) {
@@ -325,6 +354,7 @@ export function useWorksSlider() {
       if (capturedRef.current) exitCapture('down');
     };
   }, [
+    isMobile,
     applyStageClass,
     stepOnce,
     forceReset,
@@ -343,5 +373,6 @@ export function useWorksSlider() {
     sectionRef,
     stageRef,
     applyStageClass,
+    isMobile,
   };
 }

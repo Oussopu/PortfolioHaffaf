@@ -58,7 +58,7 @@ export default function WaveEffect({
     } else {
       ScrollTrigger.create({
         trigger: ref.current,
-        start: 'top 70%',
+        start: '20% 100%',
         once: true,
         onEnter: animate,
       });

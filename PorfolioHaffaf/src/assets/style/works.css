@@ -1,7 +1,8 @@
 .works-main {
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  height: 100svh;
+  width: 100vw;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
@@ -30,7 +31,7 @@
 .works-main .works-slider .third-work {
   padding: 0 1vw;
   position: absolute;
-  height: 80vh;
+  height: 80svh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -45,7 +46,7 @@
 .works-main .works-slider .third-work .first-work-title,
 .works-main .works-slider .third-work .second-work-title,
 .works-main .works-slider .third-work .third-work-title {
-  height: 3vh;
+  height: 3svh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -59,7 +60,7 @@
 .works-main .works-slider .third-work .first-work-description,
 .works-main .works-slider .third-work .second-work-description,
 .works-main .works-slider .third-work .third-work-description {
-  height: 77vh;
+  height: 77svh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -75,7 +76,7 @@
 .works-main .works-slider .third-work .third-work-description img {
   filter: grayscale(100%);
   padding: 0 3vw;
-  width: 70vh;
+  width: 50vw;
   cursor: pointer;
 }
 .works-main .works-slider .first-work .first-work-description img:hover, .works-main .works-slider .first-work .second-work-description img:hover, .works-main .works-slider .first-work .third-work-description img:hover,
@@ -102,7 +103,7 @@
   position: relative;
   background-color: rgba(20, 20, 20, 0.9);
   color: #f2f2f2;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
 }
 .works-main .works-slider .first-work .second-work-description,
@@ -121,55 +122,68 @@
   filter: grayscale(50%);
 }
 .works-main .works-slider .first-work {
-  bottom: -171vh;
+  bottom: -171svh;
   background-color: #141414;
   color: #f2f2f2;
 }
 .works-main .works-slider .second-work {
-  bottom: -174vh;
+  bottom: -174svh;
   background-color: #f2f2f2;
   color: #141414;
 }
 .works-main .works-slider .third-work {
-  bottom: -177vh;
+  bottom: -177svh;
   background-color: #141414;
   color: #f2f2f2;
 }
 .works-main .works-slider.open-0 .first-work {
-  bottom: -171vh;
+  bottom: -171svh;
 }
 .works-main .works-slider.open-0 .second-work {
-  bottom: -174vh;
+  bottom: -174svh;
 }
 .works-main .works-slider.open-0 .third-work {
-  bottom: -177vh;
+  bottom: -177svh;
 }
 .works-main .works-slider.open-1 .first-work {
-  bottom: -94vh;
+  bottom: -94svh;
 }
 .works-main .works-slider.open-1 .second-work {
-  bottom: -174vh;
+  bottom: -174svh;
 }
 .works-main .works-slider.open-1 .third-work {
-  bottom: -177vh;
+  bottom: -177svh;
 }
 .works-main .works-slider.open-2 .first-work {
-  bottom: -94vh;
+  bottom: -94svh;
 }
 .works-main .works-slider.open-2 .second-work {
-  bottom: -97vh;
+  bottom: -97svh;
 }
 .works-main .works-slider.open-2 .third-work {
-  bottom: -177vh;
+  bottom: -177svh;
 }
 .works-main .works-slider.open-3 .first-work {
-  bottom: -94vh;
+  bottom: -94svh;
 }
 .works-main .works-slider.open-3 .second-work {
-  bottom: -97vh;
+  bottom: -97svh;
 }
 .works-main .works-slider.open-3 .third-work {
-  bottom: -100vh;
+  bottom: -100svh;
+}
+.works-main .works-slider.mobile-view {
+  position: relative;
+  height: auto;
+}
+.works-main .works-slider.mobile-view .first-work,
+.works-main .works-slider.mobile-view .second-work,
+.works-main .works-slider.mobile-view .third-work {
+  position: relative !important;
+  bottom: auto !important;
+  height: auto;
+  min-height: 80svh;
+  transition: none;
 }
 
 /*# sourceMappingURL=works.css.map */

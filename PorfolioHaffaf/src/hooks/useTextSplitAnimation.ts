@@ -31,27 +31,27 @@ export const useTextSplitAnimation = ({
         }
       >();
 
-      elements.forEach((el) => {
+      for (const el of elements) {
         const chars = Array.from(el.querySelectorAll<HTMLElement>('.char'));
 
         const handleMouseEnter = () => {
-          chars.forEach((char) => {
+          for (const char of chars) {
             char.classList.remove(animationClass);
-          });
+          }
 
           void el.offsetWidth;
 
           if (randomOrder) {
-            chars.forEach((char) => {
+            for (const char of chars) {
               const randomDelay = Math.random() * (delayRange[1] - delayRange[0]) + delayRange[0];
               char.style.animationDelay = `${randomDelay}ms`;
-            });
+            }
           }
 
           requestAnimationFrame(() => {
-            chars.forEach((char) => {
+            for (const char of chars) {
               char.classList.add(animationClass);
-            });
+            }
           });
         };
 
@@ -61,9 +61,9 @@ export const useTextSplitAnimation = ({
 
           setTimeout(
             () => {
-              chars.forEach((char) => {
+              for (const char of chars) {
                 char.classList.remove(animationClass);
-              });
+              }
             },
             maxDelay + animationDuration + 100,
           );
@@ -76,13 +76,13 @@ export const useTextSplitAnimation = ({
           enter: handleMouseEnter,
           leave: handleMouseLeave,
         });
-      });
+      }
 
       return () => {
-        handlers.forEach(({ enter, leave }, el) => {
+        for (const [el, { enter, leave }] of handlers) {
           el.removeEventListener('mouseenter', enter);
           el.removeEventListener('mouseleave', leave);
-        });
+        }
       };
     }
   }, [selector, animationClass, triggerOnHover, randomOrder, delayRange]);

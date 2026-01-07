@@ -2,6 +2,7 @@ import { useId } from 'react';
 import { type Tone, useSectionTone } from '../../hooks/useSectionTone';
 import TitleWorks from '../TitleWorks.tsx';
 import WorksSlider from '../WorksSlider.tsx';
+import '../../assets/media-style/media-works.scss';
 
 const Works = ({ onEnterTone }: { onEnterTone: (t: Tone) => void }) => {
   const ref = useSectionTone('light', onEnterTone);

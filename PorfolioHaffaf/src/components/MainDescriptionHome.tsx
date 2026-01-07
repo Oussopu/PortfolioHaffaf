@@ -20,12 +20,12 @@ const MainDescriptionHome = () => {
       <a className="contact-link" href={mailto}>
         <div className="text-arrow">
           <TypewriterEffect triggerOnLoad={true} delay={0.7}>
-            <Text name="CONTACT ME" fontSize="20px" color="#a3a3a3" />
+            <Text name="CONTACT ME" fontSize="1.35vw" color="#a3a3a3" />
           </TypewriterEffect>
           <img src={arrowDown} alt="arrow icon" />
         </div>
         <TypewriterEffect triggerOnLoad={true} delay={0.7}>
-          <Text name="O.HAFFAF.DEV@GMAIL.COM" fontSize="20px" hasBorder={true} />
+          <Text name="O.HAFFAF.DEV@GMAIL.COM" fontSize="1.35vw" hasBorder={true} />
         </TypewriterEffect>
       </a>
 
@@ -38,12 +38,12 @@ const MainDescriptionHome = () => {
       >
         <div className="text-arrow">
           <TypewriterEffect triggerOnLoad={true} delay={0.9}>
-            <Text name="LAST WORK" fontSize="20px" color="#a3a3a3" />
+            <Text name="LAST WORK" fontSize="1.35vw" color="#a3a3a3" />
           </TypewriterEffect>
           <img src={arrowDown} alt="arrow icon" />
         </div>
         <TypewriterEffect triggerOnLoad={true} delay={0.9}>
-          <Text name="LIZZY'SWORLD" fontSize="20px" />
+          <Text name="LIZZY'SWORLD" fontSize="1.35vw" />
         </TypewriterEffect>
       </a>
     </div>

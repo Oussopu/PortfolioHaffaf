@@ -13,10 +13,10 @@ export default function WorksSlider() {
           <div className="first-work">
             <div className="first-work-title">
               <div className="number-work">
-                <Text name="01" color="#f2f2f2" fontSize="20px" fontWeight="700" />
+                <Text name="01" color="#f2f2f2" fontSize="1.35vw" fontWeight="700" />
               </div>
               <div className="name-work">
-                <Text name="LIZZY'SWORLD" color="#f2f2f2" fontSize="20px" fontWeight="700" />
+                <Text name="LIZZY'SWORLD" color="#f2f2f2" fontSize="1.35vw" fontWeight="700" />
               </div>
             </div>
             <div className="first-work-description">
@@ -31,7 +31,7 @@ export default function WorksSlider() {
                                       THE ARTISTIC SOUL OF THE COLLECTION."
                 color="#f2f2f2"
                 fontWeight="700"
-                fontSize="20px"
+                fontSize="1.35vw"
               />
             </div>
           </div>
@@ -40,10 +40,15 @@ export default function WorksSlider() {
           <div className="second-work">
             <div className="second-work-title">
               <div className="number-work">
-                <Text name="02" color="#141414" fontSize="20px" fontWeight="700" />
+                <Text name="02" color="#141414" fontSize="1.35vw" fontWeight="700" />
               </div>
               <div className="name-work">
-                <Text name="THE PRICE IS RIGHT" color="#141414" fontSize="20px" fontWeight="700" />
+                <Text
+                  name="THE PRICE IS RIGHT"
+                  color="#141414"
+                  fontSize="1.35vw"
+                  fontWeight="700"
+                />
               </div>
             </div>
             <div className="second-work-description">
@@ -63,7 +68,7 @@ export default function WorksSlider() {
                   DEPLOY A FULLY FUNCTIONAL GAME WITHIN A SINGLE DAY."
                 color="#141414"
                 fontWeight="700"
-                fontSize="20px"
+                fontSize="1.35vw"
               />
             </div>
           </div>
@@ -73,10 +78,10 @@ export default function WorksSlider() {
           <div className="third-work">
             <div className="third-work-title">
               <div className="number-work">
-                <Text name="03" color="#f2f2f2" fontSize="20px" fontWeight="700" />
+                <Text name="03" color="#f2f2f2" fontSize="1.35vw" fontWeight="700" />
               </div>
               <div className="name-work">
-                <Text name="OH MY FOOD" color="#f2f2f2" fontSize="20px" fontWeight="700" />
+                <Text name="OH MY FOOD" color="#f2f2f2" fontSize="1.35vw" fontWeight="700" />
               </div>
             </div>
             <div className="third-work-description">
@@ -95,7 +100,7 @@ export default function WorksSlider() {
                   THE IDEAL RESTAURANT ACCORDING TO YOUR DESIRES OF THE MOMENT."
                 color="#f2f2f2"
                 fontWeight="700"
-                fontSize="20px"
+                fontSize="1.35vw"
               />
             </div>
           </div>

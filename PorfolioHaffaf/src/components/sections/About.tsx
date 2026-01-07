@@ -1,6 +1,7 @@
 import { type Tone, useSectionTone } from '../../hooks/useSectionTone';
 import TextAbout from '../TextAbout.tsx';
 import TitleAbout from '../TitleAbout.tsx';
+import '../../assets/media-style/media-about.scss';
 
 const About = ({ onEnterTone }: { onEnterTone: (t: Tone) => void }) => {
   const ref = useSectionTone('dark', onEnterTone);

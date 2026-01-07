@@ -6,8 +6,8 @@ const WebsiteLogo = () => {
 
   return (
     <button type="button" className="website-logo" onClick={() => navigateToSection('home')}>
-      <Text name="HAFFAF" fontSize="24px" />
-      <Text name="OUSSAMA" fontSize="24px" />
+      <Text name="HAFFAF" fontSize="1.65vw" />
+      <Text name="OUSSAMA" fontSize="1.65vw" />
     </button>
   );
 };

@@ -13,7 +13,7 @@ const Text = ({
   name,
   color,
   fontWeight = 700,
-  fontSize = '150px',
+  fontSize = '10.35vw',
   hasBorder = false,
   borderColor,
 }: TextProps) => {

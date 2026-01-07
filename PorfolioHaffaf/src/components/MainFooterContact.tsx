@@ -8,9 +8,9 @@ const MainFooterContact = () => (
     </WaveEffect>
     <WaveEffect triggerOnLoad={true} delay={0}>
       <Text
-        name="© All right reserved. 2025 Haffafoussama"
+        name="© All right reserved. 2026 Haffafoussama"
         color="#f2f2f2"
-        fontSize="12px"
+        fontSize="1vw"
         fontWeight="100"
       />
     </WaveEffect>

@@ -1,27 +1,29 @@
 .about-main {
-  height: 100vh;
+  height: 100svh;
+  width: 100vw;
+  overflow-x: hidden;
   background-color: #141414;
-  margin-top: 15vh;
-  padding-top: 10vh;
+  margin-top: 15svh;
+  padding-top: 10svh;
 }
 .about-main .title-about > :nth-child(1) {
   margin: 0;
-  padding: 0 0 0 200px;
+  padding: 0 0 0 13.8vw;
 }
 .about-main .text-about .text {
   width: 25vw;
 }
 .about-main .text-about > :nth-child(1) {
   position: relative;
-  left: 400px;
+  left: 27.5vw;
 }
 .about-main .text-about > :nth-child(2) {
   position: relative;
-  left: 800px;
+  left: 55vw;
 }
 .about-main .text-about > :nth-child(3) {
   position: relative;
-  left: 900px;
+  left: 62vw;
 }
 
 /*# sourceMappingURL=about.css.map */

@@ -1,10 +1,12 @@
 @import './variables';
 
 .contact-section {
-  height: 100vh;
+  height: 100svh;
   background-color: $color-primary;
+  width: 100vw;
+  overflow-x: hidden;
   .main-title-contact {
-    padding: 20vh 0 0 10vw;
+    padding: 20svh 0 0 10vw;
   }
   .contact-links{
     display: flex;
@@ -24,7 +26,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding-top: 5vh;
+        padding-top: 5svh;
       }
     }
     @keyframes borderSlide {
@@ -43,7 +45,7 @@
 
     & > :last-child {
       position: absolute;
-      bottom: 1vh;
+      bottom: 1svh;
       right: 2vw;
     }
   }

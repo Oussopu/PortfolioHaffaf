@@ -8,7 +8,7 @@ const TitleService = () => (
       <Text name="A GREAT WORK" />
     </WaveEffect>
     <TypewriterEffect delay={0}>
-      <Text name="START WITH A GREAT" fontSize="20" fontWeight="100" />
+      <Text name="START WITH A GREAT" fontSize="1.35vw" fontWeight="100" />
     </TypewriterEffect>
     <WaveEffect delay={0}>
       <Text name="COLLABORATION" />

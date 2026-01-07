@@ -1,0 +1,56 @@
+@media (max-width: 767px) {
+  .home-main {
+    .main-title {
+      padding: 25svh 0 0 2svh;
+      .job-title {
+        & > :first-child {
+          .text p {
+            font-size: 13vw !important;
+          }
+        }
+        & > :nth-child(2) {
+          .text p {
+            font-size: 2vw !important;
+          }
+        }
+      }
+      .title-location {
+        & > :first-child {
+          .text p {
+            font-size: 3vw !important;
+          }
+        }
+        & > :nth-child(2) {
+          .text p {
+            font-size: 3vw !important;
+          }
+        }
+        .visible-title-location {
+          width: 30%;
+        }
+      }
+    }
+    .main-picture {
+      .grey-background {
+        left: 5vw;
+        top: 10svh;
+        width: 30vw;
+        .skills {
+          .text p {
+            font-size: 2.5vw !important;
+          }
+        }
+      }
+      img {
+        bottom: -3svh;
+        left: -5vw;
+        height: 40svh;
+      }
+    }
+    .main-description {
+      .text p {
+      font-size: 2.5vw !important;
+      }
+    }
+  }
+}

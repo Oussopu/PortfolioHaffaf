@@ -6,7 +6,7 @@ export const useNavHoverAnimation = (selector: string = '.website-nav ul li') =>
 
     const handlers = new Map<HTMLLIElement, { enter: () => void; leave: () => void }>();
 
-    navItems.forEach((li) => {
+    for (const li of navItems) {
       const handleMouseEnter = () => li.classList.add('hovered');
       const handleMouseLeave = () => li.classList.remove('hovered');
 
@@ -14,13 +14,13 @@ export const useNavHoverAnimation = (selector: string = '.website-nav ul li') =>
       li.addEventListener('mouseleave', handleMouseLeave);
 
       handlers.set(li, { enter: handleMouseEnter, leave: handleMouseLeave });
-    });
+    }
 
     return () => {
-      handlers.forEach(({ enter, leave }, li) => {
+      for (const [li, { enter, leave }] of handlers) {
         li.removeEventListener('mouseenter', enter);
         li.removeEventListener('mouseleave', leave);
-      });
+      }
     };
   }, [selector]);
 };

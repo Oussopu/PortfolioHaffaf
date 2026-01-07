@@ -17,7 +17,7 @@ export const useTextArrowAnimationWebsite = ({
 
     const cleanups: Array<() => void> = [];
 
-    containers.forEach((container) => {
+    for (const container of containers) {
       const arrowRow = container.querySelector<HTMLElement>('.text-arrow');
       const arrow = arrowRow?.querySelector<HTMLImageElement>('img');
 
@@ -26,7 +26,7 @@ export const useTextArrowAnimationWebsite = ({
         arrowRow?.nextElementSibling?.querySelector<HTMLElement>('p') ||
         undefined;
 
-      if (!arrowRow || !arrow) return;
+      if (!arrowRow || !arrow) continue;
 
       arrow.style.transition = 'transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)';
       arrow.style.transformOrigin = 'center';
@@ -49,7 +49,7 @@ export const useTextArrowAnimationWebsite = ({
         container.removeEventListener('mouseenter', handleEnter);
         container.removeEventListener('mouseleave', handleLeave);
       });
-    });
+    }
 
     return () => {
       for (const cleanup of cleanups) {

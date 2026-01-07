@@ -17,13 +17,13 @@ const useTextArrowAnimationHeader = ({
 
     const cleanups: (() => void)[] = [];
 
-    containers.forEach((container) => {
+    for (const container of containers) {
       const text =
         container.querySelector<HTMLElement>('.text p') ||
         container.querySelector<HTMLElement>('p');
 
       const arrow = container.querySelector<HTMLImageElement>('img');
-      if (!arrow) return;
+      if (!arrow) continue;
 
       arrow.style.transition = 'transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)';
       arrow.style.transformOrigin = 'center';
@@ -46,7 +46,7 @@ const useTextArrowAnimationHeader = ({
         container.removeEventListener('mouseenter', handleMouseEnter);
         container.removeEventListener('mouseleave', handleMouseLeave);
       });
-    });
+    }
 
     return () => {
       for (const cleanup of cleanups) {
