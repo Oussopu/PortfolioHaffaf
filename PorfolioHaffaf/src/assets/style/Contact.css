@@ -1,9 +1,11 @@
 .contact-section {
-  height: 100vh;
+  height: 100svh;
   background-color: #141414;
+  width: 100vw;
+  overflow-x: hidden;
 }
 .contact-section .main-title-contact {
-  padding: 20vh 0 0 10vw;
+  padding: 20svh 0 0 10vw;
 }
 .contact-section .contact-links {
   display: flex;
@@ -23,7 +25,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-top: 5vh;
+  padding-top: 5svh;
 }
 @keyframes borderSlide {
   from {
@@ -43,7 +45,7 @@
 }
 .contact-section .main-footer > :last-child {
   position: absolute;
-  bottom: 1vh;
+  bottom: 1svh;
   right: 2vw;
 }
 

@@ -66,7 +66,7 @@ const ServiceForm = () => {
         <textarea
           id={messageId}
           name="message"
-          rows={5}
+          rows={1}
           placeholder="HOW CAN I HELP YOU *"
           required
           aria-label="Your Message"
@@ -82,7 +82,7 @@ const ServiceForm = () => {
       >
         <div className="text-arrow">
           <TypewriterEffect key={buttonLabel} triggerOnLoad={true} delay={0.5}>
-            <Text name={buttonLabel} fontSize="20px" color="#a3a3a3" />
+            <Text name={buttonLabel} fontSize="1.35vw" color="#a3a3a3" />
           </TypewriterEffect>
           {!sending && <img src={arrow} alt="arrow icon" />}
         </div>

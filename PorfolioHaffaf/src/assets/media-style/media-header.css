@@ -1,0 +1,21 @@
+@media (max-width: 1024px) {
+  .main-nav .text p {
+    font-size: 2vw !important;
+  }
+  .main-nav .website-nav {
+    width: 50%;
+  }
+  .main-nav .website-contact img {
+    width: 2vw;
+  }
+}
+@media (max-width: 767px) {
+  .main-nav .text p {
+    font-size: 3vw !important;
+  }
+  .main-nav .website-contact img {
+    width: 3vw;
+  }
+}
+
+/*# sourceMappingURL=media-header.css.map */

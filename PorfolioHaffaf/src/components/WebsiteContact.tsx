@@ -40,7 +40,7 @@ const WebsiteContact = () => {
       style={{ cursor: 'pointer', background: 'none', border: 'none', padding: 0 }}
     >
       <div className="text-arrow">
-        <Text name="CONTACT ME" fontSize="20px" hasBorder={true} />
+        <Text name="CONTACT ME" fontSize="1.35vw" hasBorder={true} />
         <img src={arrow} alt="arrow icon" aria-hidden="true" />
       </div>
     </button>

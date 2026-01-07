@@ -1,4 +1,5 @@
 import '../assets/style/contact.scss';
+import '../assets/media-style/media-contact.scss';
 import ContactLinks from '../components/ContactLinks.tsx';
 import MainFooterContact from '../components/MainFooterContact.tsx';
 import MainTitleContact from '../components/MainTitleContact.tsx';

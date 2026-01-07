@@ -1,0 +1,43 @@
+@media (max-width: 1024px) {
+  .about-main {
+    .title-about {
+      .text p {
+        font-size: 7vw !important;
+      }
+    }
+    .text-about {
+      .text p {
+        font-size: 1.5vw !important;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .about-main {
+    .title-about {
+      .text p {
+        font-size: 10vw !important;
+      }
+    }
+    .text-about {
+      .text p {
+        font-size: 2vw !important;
+      }
+      .text {
+        width: 35vw;
+      }
+      & > :nth-child(1) {
+        left: 20vw;
+        padding: 1svh 0;
+      }
+      & > :nth-child(2){
+        left: 40vw;
+        padding: 1svh 0;
+      }
+      & > :nth-child(3){
+        left: 45vw;
+        padding: 1svh 0;
+      }
+    }
+  }
+}

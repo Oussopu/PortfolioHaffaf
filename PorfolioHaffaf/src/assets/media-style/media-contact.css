@@ -1,0 +1,55 @@
+@media (max-width: 1024px) {
+  .contact-section .main-title-contact .text p {
+    font-size: 5vw !important;
+  }
+  .contact-section .contact-links .main-resume {
+    padding: 5svh 0 0 15vw;
+  }
+  .contact-section .contact-links .main-resume .text p, .contact-section .contact-links .main-resume .text-arrow p {
+    font-size: 3vw !important;
+  }
+  .contact-section .contact-links .main-contact {
+    padding: 5svh 0 0 10vw;
+  }
+  .contact-section .contact-links .main-contact .text p, .contact-section .contact-links .main-contact .text-arrow p {
+    font-size: 3vw !important;
+  }
+  .contact-section .contact-links .main-contact .socials-link .social-item {
+    padding-right: 2vw;
+  }
+  .contact-section .contact-links .main-contact .socials-link .social-item img {
+    width: 3vw;
+  }
+  .contact-section .main-footer > :first-child {
+    bottom: 3svh;
+  }
+  .contact-section .main-footer > :first-child .text p {
+    font-size: 11vw !important;
+  }
+  .contact-section .main-footer > :last-child .text p {
+    font-size: 1.5vw !important;
+  }
+}
+@media (max-width: 767px) {
+  .contact-section .contact-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact-section .contact-links .main-resume .text p, .contact-section .contact-links .main-resume .text-arrow p {
+    font-size: 3.5vw !important;
+  }
+  .contact-section .contact-links .main-contact {
+    padding: 5svh 0 0 20vw;
+  }
+  .contact-section .contact-links .main-contact .text p, .contact-section .contact-links .main-contact .text-arrow p {
+    font-size: 3.5vw !important;
+  }
+  .contact-section .contact-links .main-contact .socials-link .social-item img {
+    width: 3.5vw;
+  }
+  .contact-section .main-footer > :last-child .text p {
+    font-size: 2vw !important;
+  }
+}
+
+/*# sourceMappingURL=media-contact.css.map */

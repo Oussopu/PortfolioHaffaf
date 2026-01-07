@@ -1,4 +1,5 @@
 import '../../assets/style/header.scss';
+import '../../assets/media-style/media-header.scss';
 import WebsiteContact from '../WebsiteContact.tsx';
 import WebsiteLogo from '../WebsiteLogo.tsx';
 import WebsiteNav from '../WebsiteNav.tsx';

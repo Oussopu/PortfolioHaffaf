@@ -4,12 +4,18 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "lint": "biome lint ./src",
-    "lint:fix": "biome lint ./src",
-    "format": "biome format ./src --write",
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "build": "npm run check && tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "biome lint ./src",
+    "lint:fix": "biome lint ./src --write",
+    "format": "biome format ./src --write",
+    "format:check": "biome format ./src",
+    "check": "biome check ./src",
+    "check:fix": "biome check ./src --write",
+    "check:all": "npm run check && npm run type-check",
+    "type-check": "tsc --noEmit",
+    "fix:all": "npm run check:fix && npm run type-check"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -37,4 +43,3 @@
     "vite": "^7.1.7"
   }
 }
-

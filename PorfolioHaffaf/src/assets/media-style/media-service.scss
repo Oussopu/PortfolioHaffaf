@@ -1,0 +1,39 @@
+@media (max-width: 767px) {
+  .service-section {
+    padding-top: 20svh;
+    .title-service {
+      & > :first-child, & > :nth-child(3), {
+        .text p {
+          font-size: 12vw !important;
+        }
+      }
+      & > :nth-child(2) {
+        .text p {
+          font-size: 3vw !important;
+        }
+      }
+    }
+    .service-form {
+      width: 60vw;
+      .form-group {
+        margin-bottom: 2svh;
+        input,
+        textarea {
+          padding: 0;
+          font-size: 2vw !important;
+          &::placeholder {
+            font-size: 2vw !important;
+          }
+        }
+      }
+      button {
+        img {
+          width: 2vw;
+        }
+        .text p {
+          font-size: 2vw !important;
+        }
+      }
+    }
+  }
+}

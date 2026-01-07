@@ -5,7 +5,7 @@
 }
 
 body {
-  width: 100ww;
+  width: 100vw;
   overflow-x: hidden;
   line-height: 1.5;
   font-family: "Open Sans Condensed", sans-serif;

@@ -28,7 +28,7 @@ const ContactLinks = () => {
       >
         <div className="text-arrow">
           <TypewriterEffect triggerOnLoad={true} delay={0}>
-            <Text name="MY RESUME" fontSize="20px" color="#a3a3a3" />
+            <Text name="MY RESUME" fontSize="1.35vw" color="#a3a3a3" />
           </TypewriterEffect>
           <img src={arrow} alt="arrow icon" />
         </div>
@@ -36,7 +36,7 @@ const ContactLinks = () => {
           <Text
             name="O.HAFFAF RESUME"
             color="#f2f2f2"
-            fontSize="50px"
+            fontSize="3.5vw"
             hasBorder={true}
             borderColor="#f2f2f2"
           />
@@ -47,7 +47,7 @@ const ContactLinks = () => {
         <a className="main-contact-head" href={mailto}>
           <div className="text-arrow">
             <TypewriterEffect triggerOnLoad={true} delay={0}>
-              <Text name="CONTACT ME" fontSize="20px" color="#a3a3a3" />
+              <Text name="CONTACT ME" fontSize="1.35vw" color="#a3a3a3" />
             </TypewriterEffect>
             <img src={arrow} alt="arrow icon" />
           </div>
@@ -55,7 +55,7 @@ const ContactLinks = () => {
             <Text
               name="O.HAFFAF.DEV@GMAIL.COM"
               color="#f2f2f2"
-              fontSize="50px"
+              fontSize="3.5vw"
               hasBorder={true}
               borderColor="#f2f2f2"
             />
@@ -63,7 +63,7 @@ const ContactLinks = () => {
         </a>
 
         <TypewriterEffect triggerOnLoad={true} delay={0}>
-          <Text name="+33 7 59 55 52 19" color="#f2f2f2" fontSize="50px" />
+          <Text name="+33 7 59 55 52 19" color="#f2f2f2" fontSize="3.5vw" />
         </TypewriterEffect>
 
         <div className="socials-link">
@@ -76,7 +76,7 @@ const ContactLinks = () => {
           >
             <div className="text-arrow">
               <FadeEffect triggerOnLoad={true} delay={0}>
-                <Text name="LINKEDIN" fontSize="20px" color="#a3a3a3" />
+                <Text name="LINKEDIN" fontSize="1.35vw" color="#a3a3a3" />
               </FadeEffect>
               <img src={arrow} alt="arrow icon" />
             </div>
@@ -91,7 +91,7 @@ const ContactLinks = () => {
           >
             <div className="text-arrow">
               <FadeEffect triggerOnLoad={true} delay={0}>
-                <Text name="GITHUB" fontSize="20px" color="#a3a3a3" />
+                <Text name="GITHUB" fontSize="1.35vw" color="#a3a3a3" />
               </FadeEffect>
               <img src={arrow} alt="arrow icon" />
             </div>
@@ -106,7 +106,7 @@ const ContactLinks = () => {
           >
             <div className="text-arrow">
               <FadeEffect triggerOnLoad={true} delay={0}>
-                <Text name="WHATSAPP" fontSize="20px" color="#a3a3a3" />
+                <Text name="WHATSAPP" fontSize="1.35vw" color="#a3a3a3" />
               </FadeEffect>
               <img src={arrow} alt="arrow icon" />
             </div>

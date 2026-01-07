@@ -1,12 +1,14 @@
 .home-main {
+  height: 100svh;
+  width: 100vw;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   line-height: 0.8;
-  padding-top: 25vh;
-
+  margin-bottom: -15svh;
   .main-title {
-    padding-left: 20vw;
+    padding: 25svh 0 0 20vw;
     .job-title {
       display: flex;
       flex-direction: row;
@@ -32,26 +34,26 @@
     animation: slideUpFade 0.8s ease-out 0.3s backwards;
     .grey-background {
       position: relative;
-      left: 150px;
-      top: 50px;
+      left: 10.3vw;
+      top: 6svh;
       background-color: #e0e0e0;
-      height: 300px;
-      width: 260px;
+      height: 37svh;
+      width: 18vw;
       z-index: -2;
+      .skills {
+        position: absolute;
+        bottom: 10px;
+        left: 15px;
+        line-height: 1.5;
+      }
     }
     img {
       position: relative;
-      bottom: 50px;
-      left: 40px;
-      height: 375px;
+      bottom: 6svh;
+      left: 2.75vw;
+      height: 46svh;
       z-index: -1;
       filter: grayscale(100%);
-    }
-    .skills {
-      position: relative;
-      right: 380px;
-      top: 220px;
-      line-height: 1.5;
     }
   }
 
@@ -69,7 +71,7 @@
       cursor: pointer;
     }
     & > :nth-child(2) {
-      padding-right: 200px;
+      padding-right: 13.8vw;
       cursor: pointer;
     }
     .contact-link, .work-link {

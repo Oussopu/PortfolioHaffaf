@@ -4,7 +4,7 @@ import Text from './Text.tsx';
 const TitleAbout = () => (
   <div className="title-about">
     <GlitchEffect delay={0}>
-      <Text name="ABOUT ME" fontSize="150px" fontWeight="700" color="#f2f2f2" />
+      <Text name="ABOUT ME" fontSize="10.35vw" fontWeight="700" color="#f2f2f2" />
     </GlitchEffect>
   </div>
 );

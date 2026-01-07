@@ -20,17 +20,17 @@ const WebsiteNav = () => {
       <ul>
         <li>
           <button type="button" onClick={() => navigateToSection('about')} className="nav-button">
-            <Text name="ABOUT ME" fontSize="20px" fontWeight="100" />
+            <Text name="ABOUT ME" fontSize="1.35vw" fontWeight="100" />
           </button>
         </li>
         <li>
           <button type="button" onClick={() => navigateToSection('works')} className="nav-button">
-            <Text name="WORKS" fontSize="20px" fontWeight="100" />
+            <Text name="WORKS" fontSize="1.35vw" fontWeight="100" />
           </button>
         </li>
         <li>
           <button type="button" onClick={() => navigateToSection('service')} className="nav-button">
-            <Text name="SERVICE" fontSize="20px" fontWeight="100" />
+            <Text name="SERVICE" fontSize="1.35vw" fontWeight="100" />
           </button>
         </li>
       </ul>

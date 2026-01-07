@@ -60,7 +60,7 @@ export default function TypeWriterEffect({
     } else {
       ScrollTrigger.create({
         trigger: ref.current,
-        start: 'top 80%',
+        start: '20% 100%',
         once: true,
         onEnter: animate,
       });

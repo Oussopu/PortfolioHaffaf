@@ -1,25 +1,27 @@
 .service-section {
-  height: 100vh;
-  padding-top: 10vh;
+  height: 100svh;
+  width: 100vw;
+  overflow-x: hidden;
+  padding-top: 10svh;
 }
 .service-section .title-service {
   display: flex;
   flex-direction: column;
   line-height: 1;
   align-items: center;
-  margin-bottom: 1vh;
+  margin-bottom: 1svh;
 }
 .service-section .service-form {
   max-width: 600px;
   width: 30vw;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1.35vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .service-section .service-form .form-group {
-  margin-bottom: 1vh;
+  margin-bottom: 1svh;
 }
 .service-section .service-form .form-group label {
   display: none;
@@ -27,11 +29,11 @@
 .service-section .service-form .form-group input,
 .service-section .service-form .form-group textarea {
   width: 100%;
-  padding: 1vh 0;
+  padding: 1svh 0 0 0;
   font-family: "Open Sans", sans-serif;
   font-stretch: condensed;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.25rem;
   color: #141414;
   background-color: transparent;
   border: none;
@@ -42,7 +44,7 @@
   font-family: "Open Sans", sans-serif;
   font-stretch: condensed;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.75rem;
   color: #141414;
   letter-spacing: 1px;
 }
